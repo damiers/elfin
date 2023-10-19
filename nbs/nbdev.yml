@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "elfin"
+  site-url: "https://DAMI-research.github.io/elfin"
+  description: "Easy analysis for functional imaging of neurons"
+  repo-branch: main
+  repo-url: "https://github.com/DAMI-research/elfin"
