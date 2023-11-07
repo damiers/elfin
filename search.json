@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "test_indx.html#installing",
+    "href": "test_indx.html#installing",
+    "title": "Welcome to Elfin",
+    "section": "Installing",
+    "text": "Installing\nYou can use fastai without any installation by using Google Colab. In fact, every page of this documentation is also available as an interactive notebook - click “Open in colab” at the top of any page to open it (be sure to change the Colab runtime to “GPU” to have it run fast!) See the fast.ai documentation on Using Colab for more information.\nYou can install fastai on your own machines with conda (highly recommended), as long as you’re running Linux or Windows (NB: Mac is not supported). For Windows, please see the “Running on Windows” for important notes.\nWe recommend using miniconda (or miniforge). First install PyTorch using the conda line shown here, and then run:\nconda install -c fastai fastai\nTo install with pip, use: pip install fastai.\nIf you plan to develop fastai yourself, or want to be on the cutting edge, you can use an editable install (if you do this, you should also use an editable install of fastcore to go with it.) First install PyTorch, and then:\ngit clone https://github.com/fastai/fastai\npip install -e \"fastai[dev]\""
+  },
+  {
+    "objectID": "test_indx.html#learning-fastai",
+    "href": "test_indx.html#learning-fastai",
+    "title": "Welcome to Elfin",
+    "section": "Learning fastai",
+    "text": "Learning fastai\nThe best way to get started with fastai (and deep learning) is to read the book, and complete the free course.\nTo see what’s possible with fastai, take a look at the Quick Start, which shows how to use around 5 lines of code to build an image classifier, an image segmentation model, a text sentiment model, a recommendation system, and a tabular model. For each of the applications, the code is much the same.\nRead through the Tutorials to learn how to train your own models on your own datasets. Use the navigation sidebar to look through the fastai documentation. Every class, function, and method is documented here.\nTo learn about the design and motivation of the library, read the peer reviewed paper."
+  },
+  {
+    "objectID": "test_indx.html#about-fastai",
+    "href": "test_indx.html#about-fastai",
+    "title": "Welcome to Elfin",
+    "section": "About fastai",
+    "text": "About fastai\nfastai is a deep learning library which provides practitioners with high-level components that can quickly and easily provide state-of-the-art results in standard deep learning domains, and provides researchers with low-level components that can be mixed and matched to build new approaches. It aims to do both things without substantial compromises in ease of use, flexibility, or performance. This is possible thanks to a carefully layered architecture, which expresses common underlying patterns of many deep learning and data processing techniques in terms of decoupled abstractions. These abstractions can be expressed concisely and clearly by leveraging the dynamism of the underlying Python language and the flexibility of the PyTorch library. fastai includes:\n\nA new type dispatch system for Python along with a semantic type hierarchy for tensors\nA GPU-optimized computer vision library which can be extended in pure Python\nAn optimizer which refactors out the common functionality of modern optimizers into two basic pieces, allowing optimization algorithms to be implemented in 4–5 lines of code\nA novel 2-way callback system that can access any part of the data, model, or optimizer and change it at any point during training\nA new data block API\nAnd much more…\n\nfastai is organized around two main design goals: to be approachable and rapidly productive, while also being deeply hackable and configurable. It is built on top of a hierarchy of lower-level APIs which provide composable building blocks. This way, a user wanting to rewrite part of the high-level API or add particular behavior to suit their needs does not have to learn how to use the lowest level."
+  },
+  {
+    "objectID": "test_indx.html#migrating-from-other-libraries",
+    "href": "test_indx.html#migrating-from-other-libraries",
+    "title": "Welcome to Elfin",
+    "section": "Migrating from other libraries",
+    "text": "Migrating from other libraries\nIt’s very easy to migrate from plain PyTorch, Ignite, or any other PyTorch-based library, or even to use fastai in conjunction with other libraries. Generally, you’ll be able to use all your existing data processing code, but will be able to reduce the amount of code you require for training, and more easily take advantage of modern best practices. Here are migration guides from some popular libraries to help you on your way:\n\nPlain PyTorch\nIgnite\nLightning\nCatalyst"
+  },
+  {
+    "objectID": "test_indx.html#windows-support",
+    "href": "test_indx.html#windows-support",
+    "title": "Welcome to Elfin",
+    "section": "Windows Support",
+    "text": "Windows Support\nDue to python multiprocessing issues on Jupyter and Windows, num_workers of Dataloader is reset to 0 automatically to avoid Jupyter hanging. This makes tasks such as computer vision in Jupyter on Windows many times slower than on Linux. This limitation doesn’t exist if you use fastai from a script.\nSee this example to fully leverage the fastai API on Windows.\nWe recommend using Windows Subsystem for Linux (WSL) instead – if you do that, you can use the regular Linux installation approach, and you won’t have any issues with num_workers."
+  },
+  {
+    "objectID": "test_indx.html#tests",
+    "href": "test_indx.html#tests",
+    "title": "Welcome to Elfin",
+    "section": "Tests",
+    "text": "Tests\nTo run the tests in parallel, launch:\nnbdev_test\nFor all the tests to pass, you’ll need to install the dependencies specified as part of dev_requirements in settings.ini\npip install -e .[dev]\nTests are written using nbdev, for example see the documentation for test_eq."
+  },
+  {
+    "objectID": "test_indx.html#contributing",
+    "href": "test_indx.html#contributing",
+    "title": "Welcome to Elfin",
+    "section": "Contributing",
+    "text": "Contributing\nAfter you clone this repository, make sure you have run nbdev_install_hooks in your terminal. This install Jupyter and git hooks to automatically clean, trust, and fix merge conflicts in notebooks.\nAfter making changes in the repo, you should run nbdev_prepare and make additional and necessary changes in order to pass all the tests."
+  },
+  {
+    "objectID": "test_indx.html#docker-containers",
+    "href": "test_indx.html#docker-containers",
+    "title": "Welcome to Elfin",
+    "section": "Docker Containers",
+    "text": "Docker Containers\nFor those interested in official docker containers for this project, they can be found here."
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "test",
+    "section": "",
+    "text": "source\n\ndenoise\n\n denoise (a=1, b=2)\n\n\nsource\n\n\nmotion_correction\n\n motion_correction (to)\n\nsay hello to somebody\n\nmotion_correction(\"Issac\")\n\n'Hello Issac!'\n\n\n\nassert denoise(3,4) == 7"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Elfin",
+    "section": "",
+    "text": "pip install elfin"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Welcome to Elfin",
+    "section": "",
+    "text": "pip install elfin"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Welcome to Elfin",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:"
+  },
+  {
+    "objectID": "index.html#citing-elfin-and-related-papers",
+    "href": "index.html#citing-elfin-and-related-papers",
+    "title": "Welcome to Elfin",
+    "section": "Citing Elfin and related papers",
+    "text": "Citing Elfin and related papers"
+  },
+  {
+    "objectID": "index.html#main-developers",
+    "href": "index.html#main-developers",
+    "title": "Welcome to Elfin",
+    "section": "Main developers",
+    "text": "Main developers\n\nPengcheng Zhou, zhoupc@gmail.com"
+  },
+  {
+    "objectID": "index.html#acknowledgement",
+    "href": "index.html#acknowledgement",
+    "title": "Welcome to Elfin",
+    "section": "Acknowledgement",
+    "text": "Acknowledgement\n\ndata\n\n\ncode\n\n\nfeedbacks"
+  },
+  {
+    "objectID": "index.html#related-repositories",
+    "href": "index.html#related-repositories",
+    "title": "Welcome to Elfin",
+    "section": "Related repositories",
+    "text": "Related repositories"
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Welcome to Elfin",
+    "section": "Copyright",
+    "text": "Copyright\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You HAVE to contact Pengcheng Zhou for commercial use.\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/."
+  }
+]
